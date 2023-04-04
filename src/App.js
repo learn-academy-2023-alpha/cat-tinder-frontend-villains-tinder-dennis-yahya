@@ -1,25 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header'
+import Footer from './components/Footer'
+import React from 'react'
+import Home from './pages/Home'
+import NotFound from './pages/NotFound'
+import VillainEdit from './pages/VillainEdit'
+import VillainIndex from './pages/VillainIndex'
+import VillainNew from './pages/VillainNew'
+import VillainShow from './pages/VillainShow'
+import mockVillains from './mockVillains'
+import Navbar from './components/Navbar';
+import { Routes, Route } from "react-router-dom"
 
-function App() {
+const App = () => {
+  // const [villains, setVillains] = useState(mockVillains)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div>
+      
+      <Navbar/>
+      <Header/>
+      <Routes>
+        
+        <Route path="/" element={<Home/>}/>
+        <Route path="/villainindex" element={<VillainIndex/>}/>
+        <Route path="/villainshow" element={<VillainShow/>}/>
+        <Route path="/villainnew" element={<VillainNew/>}/>
+        <Route path="/villainedit" element={<VillainEdit/>}/>
+        <Route path="*" element={<NotFound/>}/>
+      
+      </Routes>
+      <Footer/>
+     
     </div>
-  );
+    </>
+  )
 }
+
 
 export default App;
