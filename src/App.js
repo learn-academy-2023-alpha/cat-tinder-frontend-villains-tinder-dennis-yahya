@@ -15,8 +15,9 @@ import { Routes, Route } from "react-router-dom"
 const App = () => {
   // const [villains, setVillains] = useState(mockVillains)
   return (
+    <>
     <div>
-      <>
+      
       <Navbar/>
       <Header/>
       <Routes>
@@ -30,8 +31,9 @@ const App = () => {
       
       </Routes>
       <Footer/>
-      </>
+     
     </div>
+    </>
   )
 }
 
