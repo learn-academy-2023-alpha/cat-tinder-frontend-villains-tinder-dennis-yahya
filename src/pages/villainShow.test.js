@@ -16,7 +16,6 @@ const renderShow = () => {
 describe("<VillainShow />", () => {
   it("renders villain enjoys attribute", () => {
     renderShow()
-    screen.logTestingPlaygroundURL()
     const enjoy = screen.getByText(`Enjoys ${villains[0].enjoy}`)
     expect(enjoy).toBeInTheDocument()
   })

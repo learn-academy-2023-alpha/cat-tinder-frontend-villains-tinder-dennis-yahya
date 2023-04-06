@@ -20,10 +20,10 @@ const Header = () => {
         </div>
         <div className="links">
             <Link to='/'> Home </Link>
-            <Link to='*'> Create </Link>
-            <Link to='/VillainEdit'> Update </Link>
-            <Link to='/VillainShow'> Show</Link>
             <Link to='/VillainIndex'> Index</Link>
+            <Link to='VillainNew'> Create </Link>
+            <Link to='/VillainEdit'> Update </Link>
+            {/* <Link to='/VillainShow'> Show</Link> */}
         </div>
     </div>
   )
