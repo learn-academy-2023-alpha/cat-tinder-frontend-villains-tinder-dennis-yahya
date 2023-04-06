@@ -13,22 +13,23 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 const App = () => {
   const [villains, setVillains] = useState(mockVillains)
+  const createVillain = (villain) => {
+    console.log(villain)
+  }
   return (
     <>
-      <Router>
         <Header />
         <div className='App'>
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/VillainIndex" element={<VillainIndex villains={villains}/>}/>
             <Route path="/VillainShow/:id" element={<VillainShow villains={villains}/>}/>
-            <Route path="/VillainNew" element={<VillainNew/>}/>
+            <Route path="/VillainNew" element={<VillainNew createVillain={createVillain}/>}/>
             <Route path="/VillainEdit" element={<VillainEdit/>}/>
             <Route path="*" element={<NotFound/>}/>
           </Routes>
         </div>
         <Footer className="Footer" />
-      </Router>
     </>
   )
 }

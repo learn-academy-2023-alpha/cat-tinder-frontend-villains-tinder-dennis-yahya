@@ -9,8 +9,9 @@ describe("<VillainIndex />", () => {
     const div = document.createElement("div")
     render(
     <BrowserRouter>
-    <VillainIndex villains={mockVillains} /> </BrowserRouter>, div)
- 
+    <VillainIndex villains={mockVillains} /> 
+    </BrowserRouter>
+    , div)
     mockVillains.forEach((villain) => {
       const villainName = screen.getByText(villain.name)
       expect(villainName).toBeInTheDocument()

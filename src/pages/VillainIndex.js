@@ -28,36 +28,5 @@ const VillainIndex = ({villains}) =>{
     )
   })}
 </main>
-//    {villains.map((villains, index)=> {
-// <main className="villain-index-cards">
-//     <Card>
-//       <CardImg
-//         alt="Joker Image"
-//         src= {villains.img}
-//         top
-//         width="100%"
-//       />
-//       <CardBody>
-//         <CardTitle tag="h5">
-//           {villains.name}
-//         </CardTitle>
-//         <CardSubtitle
-//           className="mb-2 text-muted"
-//           tag="h6" 
-//         >
-//           age: {villains.age}
-//         </CardSubtitle>
-//         <CardText>
-//         enjoys: {villains.enjoy}
-//         </CardText>
-//         <Button>
-//           Button
-//         </Button>
-//       </CardBody>
-//     </Card>
-//    )
-//     })
-//       }
-//       </main>
 )}
 export default VillainIndex
