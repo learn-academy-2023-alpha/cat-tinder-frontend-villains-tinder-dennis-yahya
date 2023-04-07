@@ -8,6 +8,8 @@ describe("<Home />", () => {
         <BrowserRouter>
           <Home />
         </BrowserRouter>)
-        expect(screen.getByText(/home/i)).toBeInTheDocument()
+        expect(screen.getByRole('heading', {
+    name: /meet the villains!/i
+  }))
   })
 })

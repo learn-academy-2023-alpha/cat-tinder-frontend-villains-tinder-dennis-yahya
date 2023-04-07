@@ -1,12 +1,13 @@
 import React from "react"
-import { useParams } from "react-router-dom"
-import {Card, CardBody, CardSubtitle, CardText, CardTitle} from 'reactstrap'
+import {Card, CardBody, CardSubtitle, CardText, CardTitle, Button} from 'reactstrap'
+import { NavLink, useParams } from "react-router-dom"
+// import {currentVillain} from "./src/pages/VillainEdit"
 
 const VillainShow = ({ villains }) => {
   const { id } = useParams()
   let selectedVillain = villains.find((villain) => villain.id === +id)
+  let currentVillain = villains?.find((villain) => villain.id === +id)
 
-  console.log(id)
 
   return (
     <div className='villain-show-align'>
@@ -36,6 +37,9 @@ const VillainShow = ({ villains }) => {
         <CardText>
           Enjoys {selectedVillain.enjoy}
         </CardText>
+      <Button><NavLink to={`/VillainEdit/${currentVillain.id}`} className="nav-link">
+          Edit a Villain
+          </NavLink></Button>
       </CardBody>
     </Card>
     )}

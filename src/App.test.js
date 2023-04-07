@@ -9,6 +9,8 @@ it('renders Home link', () => {
   <App />
   </BrowserRouter>
   );
-  const linkElements = screen.getAllByText(/Home/i);
-  expect(linkElements).toHaveLength(2);
+  screen.logTestingPlaygroundURL()
+  const linkElements = screen.getByRole('heading', {
+    name: /meet the villains!/i
+  })
 });

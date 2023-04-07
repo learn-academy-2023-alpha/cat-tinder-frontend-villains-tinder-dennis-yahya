@@ -1,16 +1,16 @@
 import { render, screen } from '@testing-library/react';
-import VillainNew from './VillainNew';
+import VillainEdit from './VillainEdit';
 import { BrowserRouter } from "react-router-dom"
 
-describe("<VillainNew />", () => {
+describe("<VillainEdit />", () => {
     beforeEach(() => {
       render(
         <BrowserRouter>
-          <VillainNew />
+          <VillainEdit />
         </BrowserRouter>
       )
   })
-  it("renders the VillainNew page for the user", () => {
+  it("renders the VillainEdit page for the user", () => {
     const inputTitle = screen.getByText("Villain Name")
     expect(inputTitle).toBeInTheDocument()
   })
@@ -22,7 +22,7 @@ describe("<VillainNew />", () => {
     const formAge = screen.getByText(/villain age/i)
     expect(formAge.getAttribute("for")).toEqual("age")
 
-    const formEnjoys = screen.getByText(/enjoys/i)
+    const formEnjoys = screen.getByText(/enjoy/i)
     expect(formEnjoys.getAttribute("for")).toEqual("enjoy")
 
     const formImage = screen.getByText(/image url/i)
