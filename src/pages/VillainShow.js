@@ -1,12 +1,17 @@
 import React from "react"
 import {Card, CardBody, CardSubtitle, CardText, CardTitle, Button} from 'reactstrap'
-import { NavLink, useParams } from "react-router-dom"
+import { NavLink, useParams, useNavigate } from "react-router-dom"
 
 
-const VillainShow = ({ villains }) => {
+const VillainShow = ({ villains, deleteVillain }) => {
   const { id } = useParams()
-  let selectedVillain = villains.find((villain) => villain.id === +id)
+  const navigate = useNavigate()
+  let selectedVillain = villains.find(villain => villain.id === +id)
   
+  const handleSubmit = () => {
+    deleteVillain(selectedVillain.id)
+    navigate("/VillainIndex")
+  }
 
 
   return (
@@ -40,6 +45,8 @@ const VillainShow = ({ villains }) => {
       <Button><NavLink to={`/VillainEdit/${selectedVillain.id}`} className="nav-link">
           Edit a Villain
           </NavLink></Button>
+  <Button onClick={handleSubmit}>Delete Villain Profile</Button>
+
       </CardBody>
     </Card>
     )}

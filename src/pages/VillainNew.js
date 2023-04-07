@@ -54,7 +54,7 @@ const VillainNew = ({ createVillain }) => {
             Enjoys
           </Label>
             <Input
-              name="enjoys"
+              name="enjoy"
               placeholder="What do you enjoy?"
               type="text"
               onChange={handleChange}
@@ -67,7 +67,7 @@ const VillainNew = ({ createVillain }) => {
             Image URL
           </Label>
             <Input
-              name="image"
+              name="img"
               type="url"
               onChange={handleChange}
             />

@@ -51,30 +51,27 @@
     animation: drop 3s infinite both;
   }
 
-  .drop:nth-child(1){
-    left:10%;
-  }
-  
-   .drop:nth-child(2){
-    left:30%;
+   .drop:nth-child(3){
+    left:50%;
     animation-delay: -.5s;
     width: .60em;
     height: .60em;
   }
   
-  .drop:nth-child(3){
-    left:20%;
+  .drop:nth-child(4){
+    left:70%;
     animation-delay: -1.5s;
     width: .75em;
     height: .75em;
   }
   
-  .drop:nth-child(4){
-    left:50%;
-    animation-delay: -.5s;
+  .drop:nth-child(5){
+    left:30%;
+    animation-delay: -.3s;
     width: .80em;
     height: .80em;
   } 
+
 
   @keyframes drop {
     0%{

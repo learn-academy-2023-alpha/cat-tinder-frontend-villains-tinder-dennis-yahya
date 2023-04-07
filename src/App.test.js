@@ -9,7 +9,6 @@ it('renders Home link', () => {
   <App />
   </BrowserRouter>
   );
-  screen.logTestingPlaygroundURL()
   const linkElements = screen.getByRole('heading', {
     name: /meet the villains!/i
   })
