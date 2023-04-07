@@ -23,6 +23,7 @@ const App = () => {
   return (
     <>
         <Header />
+        <div className="bg"></div>
         <div className='App'>
           <Routes>
             <Route path="/" element={<Home/>}/>

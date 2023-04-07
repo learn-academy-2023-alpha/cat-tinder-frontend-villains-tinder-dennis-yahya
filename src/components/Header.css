@@ -1,23 +1,94 @@
 .navbar {
     width: 100%;
     height: 100px;
-    background: #234E70;
+    background: #000000;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Creepster';
+    overflow: hidden;
+   
   }
-  
+  .navbar{
+    margin: 0;
+    position: relative;
+    text-transform: uppercase;
+    height: 200px;
+    text-align: center;
+    text-shadow: 1px 1px 5px crimson;
+  }
+
   .links {
-    width: 100%;
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Creepster';
+    overflow: hidden;
+    text-shadow: 1px 1px 5px crimson;
+    
   }
   
   .navbar a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     margin: 20px;
-    font-size: 25px;
+    font-size: 80px;
+    
+  }
+
+  .drop{
+    position: absolute;
+    top: 65%;
+    width: .1em;
+    height:.1em;
+    border-radius: 0 100% 100% 100%;
+    box-shadow: 1px 1px 3px crimson;
+    animation: drop 3s infinite both;
+  }
+
+  .drop:nth-child(1){
+    left:10%;
+  }
+  
+   .drop:nth-child(2){
+    left:30%;
+    animation-delay: -.5s;
+    width: .60em;
+    height: .60em;
+  }
+  
+  .drop:nth-child(3){
+    left:20%;
+    animation-delay: -1.5s;
+    width: .75em;
+    height: .75em;
+  }
+  
+  .drop:nth-child(4){
+    left:50%;
+    animation-delay: -.5s;
+    width: .80em;
+    height: .80em;
+  } 
+
+  @keyframes drop {
+    0%{
+      transform: translate(0) scaleX(.85) rotate(45deg);
+      animation-timing-function: ease-out;
+    }
+    60%{
+      transform: translateY(120%) scaleX(.85) rotate(45deg);
+      animation-timing-function: ease-in;
+    }
+    80%, 100%{
+      transform: translateY(50vh) scaleX(.85) rotate(45deg);
+    
+    }
   }
   
   .toggleButton {

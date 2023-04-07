@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "./Header.css"
 import { Link } from "react-router-dom"
-
+import "@fontsource/creepster"
 const Header = () => {
   const [expandNavbar, setExpandNavbar] = useState(false)
 
@@ -22,6 +22,27 @@ const Header = () => {
             <Link to='/VillainEdit'> Update </Link>
             
         </div>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
     </div>
   )
 }
