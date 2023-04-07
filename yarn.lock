@@ -1227,6 +1227,11 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.37.0.tgz#cf1b5fa24217fe007f6487a26d765274925efa7d"
   integrity sha512-x5vzdtOOGgFVDCUs81QRB2+liax8rFg3+7hqM+QhBG0/G3F1ZsoYl97UrqgHgQ9KKT7G6c4V+aTUCgu/n22v1A==
 
+"@fontsource/creepster@^4.5.7":
+  version "4.5.7"
+  resolved "https://registry.yarnpkg.com/@fontsource/creepster/-/creepster-4.5.7.tgz#a379c692ada545e19d9951ba5a72cbb8db7bf7b2"
+  integrity sha512-1wfitrfzzBgRX/B+AA0ySSR3uY8PLFULz+GytrOowBtG/BFJ0cIXbwMpqY6O1JAvFoYArsmNubwpqwCOXjj+Cg==
+
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.8.tgz#03595ac2075a4dc0f191cc2131de14fbd7d410b9"

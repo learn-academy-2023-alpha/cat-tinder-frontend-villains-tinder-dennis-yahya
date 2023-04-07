@@ -16,16 +16,21 @@ const App = () => {
   const createVillain = (villain) => {
     console.log(villain)
   }
+  const updateVillain = (villain, id) => {
+    console.log("villain:", villain)
+    console.log("villain:", id)
+  }
   return (
     <>
         <Header />
+        <div className="bg"></div>
         <div className='App'>
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/VillainIndex" element={<VillainIndex villains={villains}/>}/>
             <Route path="/VillainShow/:id" element={<VillainShow villains={villains}/>}/>
             <Route path="/VillainNew" element={<VillainNew createVillain={createVillain}/>}/>
-            <Route path="/VillainEdit" element={<VillainEdit/>}/>
+            <Route path="/VillainEdit/:id" element={<VillainEdit villains={villains} updateVillain={updateVillain}/>}/>
             <Route path="*" element={<NotFound/>}/>
           </Routes>
         </div>

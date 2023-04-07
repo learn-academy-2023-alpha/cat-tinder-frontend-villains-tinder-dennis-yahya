@@ -20,9 +20,9 @@ const VillainIndex = ({villains}) =>{
             
             Age: {villain.age}
           </CardSubtitle>
-          <NavLink to={`/VillainShow/${villain.id}`} className="nav-link">
+         <Button><NavLink to={`/VillainShow/${villain.id}`} className="nav-link">
           See More Details
-          </NavLink>
+          </NavLink></Button>
         </CardBody>
       </Card>
     )
