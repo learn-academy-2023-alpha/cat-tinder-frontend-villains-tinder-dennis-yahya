@@ -16,7 +16,7 @@ import { useNavigate, useParams } from 'react-router-dom'
       enjoys: currentVillain ? currentVillain.enjoy : '',
       image: currentVillain ? currentVillain.img : ''
     })
-    
+
     const handleChange = (e) => {
       setEditVillain({ ...editVillain, [e.target.name]: e.target.value })
     }
@@ -30,6 +30,7 @@ import { useNavigate, useParams } from 'react-router-dom'
             Villain Name
           </Label>
             <Input
+              value= {currentVillain.name}
               name="name"
               placeholder="What is the villains name"
               type="text"
@@ -42,6 +43,7 @@ import { useNavigate, useParams } from 'react-router-dom'
             Villain Age
           </Label>
             <Input
+              value= {currentVillain.age}
               name="age"
               placeholder="What is the villains age"
               type="number"
@@ -55,6 +57,7 @@ import { useNavigate, useParams } from 'react-router-dom'
             Enjoys
           </Label>
             <Input
+              value= {currentVillain.enjoy}
               name="enjoys"
               placeholder="What does the villain enjoy?"
               type="text"
@@ -67,6 +70,7 @@ import { useNavigate, useParams } from 'react-router-dom'
             Image URL
           </Label>
             <Input
+              value= {currentVillain.img}
               name="image"
               type="url"
               onChange={handleChange}

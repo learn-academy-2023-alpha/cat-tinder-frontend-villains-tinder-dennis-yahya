@@ -6,7 +6,7 @@ import { NavLink, useParams } from "react-router-dom"
 const VillainShow = ({ villains }) => {
   const { id } = useParams()
   let selectedVillain = villains.find((villain) => villain.id === +id)
-  let currentVillain = villains?.find((villain) => villain.id === +id)
+  
 
 
   return (
@@ -37,7 +37,7 @@ const VillainShow = ({ villains }) => {
         <CardText>
           Enjoys {selectedVillain.enjoy}
         </CardText>
-      <Button><NavLink to={`/VillainEdit/${currentVillain.id}`} className="nav-link">
+      <Button><NavLink to={`/VillainEdit/${selectedVillain.id}`} className="nav-link">
           Edit a Villain
           </NavLink></Button>
       </CardBody>
