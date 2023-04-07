@@ -1,7 +1,7 @@
 import React from "react"
 import {Card, CardBody, CardSubtitle, CardText, CardTitle, Button} from 'reactstrap'
 import { NavLink, useParams } from "react-router-dom"
-// import {currentVillain} from "./src/pages/VillainEdit"
+
 
 const VillainShow = ({ villains }) => {
   const { id } = useParams()
