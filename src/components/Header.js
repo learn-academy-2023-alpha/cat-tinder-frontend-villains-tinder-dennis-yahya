@@ -19,8 +19,6 @@ const Header = () => {
             <Link to='/'> Home </Link>
             <Link to='/VillainIndex'> Index</Link>
             <Link to='VillainNew'> Create </Link>
-            <Link to='/VillainEdit'> Update </Link>
-            
         </div>
         <span class="drop"></span>
         <span class="drop"></span>

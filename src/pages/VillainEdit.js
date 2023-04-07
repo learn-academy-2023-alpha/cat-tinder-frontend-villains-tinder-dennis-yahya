@@ -30,9 +30,9 @@ import { useNavigate, useParams } from 'react-router-dom'
             Villain Name
           </Label>
             <Input
-              value= {currentVillain.name}
+              // value= {currentVillain.name}
               name="name"
-              placeholder="What is the villains name"
+              placeholder= {currentVillain.name}
               type="text"
               onChange={handleChange}
             />
@@ -43,9 +43,8 @@ import { useNavigate, useParams } from 'react-router-dom'
             Villain Age
           </Label>
             <Input
-              value= {currentVillain.age}
               name="age"
-              placeholder="What is the villains age"
+              placeholder= {currentVillain.age}
               type="number"
               onChange={handleChange}
             />
@@ -57,9 +56,8 @@ import { useNavigate, useParams } from 'react-router-dom'
             Enjoys
           </Label>
             <Input
-              value= {currentVillain.enjoy}
               name="enjoys"
-              placeholder="What does the villain enjoy?"
+              placeholder= {currentVillain.enjoy}
               type="text"
               onChange={handleChange}
             />
@@ -70,8 +68,8 @@ import { useNavigate, useParams } from 'react-router-dom'
             Image URL
           </Label>
             <Input
-              value= {currentVillain.img}
               name="image"
+              placeholder= {currentVillain.img}
               type="url"
               onChange={handleChange}
             />
