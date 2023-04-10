@@ -1,6 +1,7 @@
 html, body {
  
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
 
@@ -25,29 +26,57 @@ html, body {
 }
 
 .Footer {
-  background-color: pink;
+  font-family: 'Creepster';
+  overflow: hidden;
+  text-shadow: 1px 1px 5px crimson;
   text-align: center;
+  background-color: purple;
 }
 
 .card {
   margin: 2rem 0;
+  padding-bottom: 1em;
+  color: black
 }
 
 .villain-index-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  font-family: 'Creepster';
+  overflow: hidden;
+  text-shadow: 1px 1px 5px crimson
+  
 }
 
 img {
-  height: 220px
-  
+  height:160px;
+  opacity: 1
 }
 
 .card-title {
   color: black
 }
 
-.card {
-  color: black
+.villain-show-align {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100%;
+}
+
+.villain-show.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: 'Creepster';
+  overflow: hidden;
+  text-shadow: 1px 1px 5px crimson;
+  /* width: 25%; */
+
+}
+
+.show-image {
+  height: 210px;
+  width: auto
 }

@@ -20,10 +20,11 @@ const VillainShow = ({ villains, deleteVillain }) => {
       <Card
       className='villain-show'
       style={{
-        width: '40%'
+        width: '25%',
+        marginTop: '0px'
       }}
     >
-      <img
+      <img className="show-image"
         alt={selectedVillain.name}
         src={selectedVillain.img}
         style={{
